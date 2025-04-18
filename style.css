@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a192f;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #64ffda;
+    text-decoration: none;
+  }
+  
+  .foto-danilo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #64ffda;
+    margin: 0 auto 1rem;
+    display: block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  #sobre-mi h2 {
+    text-align: center;
+  }
+
+  #sobre-mi {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  #sobre-mi p {
+    font-size: 1.3rem; 
+    line-height: 1.8;   
+    max-width: 800px;   
+    margin: 0 auto 1.5rem;  
+    color: #333;        
+  }
+  
+  
+  #hero {
+    background: url('img/hero.webp') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  #hero p {
+    font-size: 1.4rem; 
+    line-height: 1.6;   
+    max-width: 600px;   
+    margin: 0 auto 1.5rem;  
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .btn {
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .grid-proyectos {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .tecnologias img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .tecnologias img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  #proyectos h3 {
+    text-align: center;
+    font-size: 1.3rem;  
+    margin-bottom: 0.5rem;
+  }
+  
+  #proyectos p {
+    text-align: center;
+    font-size: 1.1rem;  
+    line-height: 1.6;   
+    max-width: 800px;  
+    margin: 0 auto 1.5rem;  
+  }
+  
+  footer {
+    background-color: #0a192f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #contacto {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  #contacto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
